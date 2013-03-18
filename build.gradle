@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+   mavenCentral()
+}
+
+sourceCompatibility='1.6'
+targetCompatibility='1.6'
+mainClassName='com.github.samples.PassByRefValRunner'
+
+task wrapper(type: Wrapper, description: 'generate gradle wrapper') {
+   gradleVersion = '1.4'
+}
